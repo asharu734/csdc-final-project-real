@@ -16,19 +16,29 @@ main{
     margin: 0 auto;
 }
 header{
-    display:flex;
-    justify-content:space-between;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 1rem 2rem;
+    background-color: #131b29; /* slate-800 */
+    color: #ffffff;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 header a{
     text-decoration:none;
     color: inherit;
 }
+header a:hover {
+    color: #7dcaeb;
+}
 header a.logo{
-    font-weight: bold;
     font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 header nav{
     display:flex;
