@@ -19,9 +19,12 @@ app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
 
-mongoose.connect('mongodb+srv://blog:TioHdK74cDK6su6w@cluster0.dndxaur.mongodb.net/blogDB?retryWrites=true&w=majority&appName=Cluster0');
+mongoose.connect('mongodb+srv://blog:TioHdK74cDK6su6w@cluster0.dndxaur.mongodb.net/blogDB?retryWrites=true&w=majority&appName=Cluster0')
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('MongoDB connection error:', err));
 
 app.post('/register', async (req,res) => {
+  console.log('Received data:', req.body);
   const {username,password} = req.body;
   try{
     const userDoc = await User.create({
@@ -134,5 +137,7 @@ app.get('/post/:id', async (req, res) => {
   res.json(postDoc);
 })
 
-app.listen(4000);
+app.listen(4000, () => {
+  console.log('Server running on http://localhost:4000');
+});
 //
