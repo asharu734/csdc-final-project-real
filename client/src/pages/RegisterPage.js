@@ -18,7 +18,7 @@ export default function RegisterPage() {
   }
   return (
     <form className="register" onSubmit={register}>
-      <h1 class="authHeader">Register</h1>
+      <h1 className="authHeader">Register</h1>
       <input type="text"
              placeholder="username"
              value={username}
