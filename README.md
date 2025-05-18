@@ -1,5 +1,5 @@
 Garold and Hian Blogs Documentation
-Created By: Hian and Garold
+Created By: Hian and Garold\n
 
 Project Overview
   Garold and Hian Blogs (GH Blogs) attempts to create a fully 
