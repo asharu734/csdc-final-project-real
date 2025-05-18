@@ -26,7 +26,6 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
-    font-style: italic;
 }
 header a{
     text-decoration:none;
@@ -163,15 +162,4 @@ div.post-page a.edit-btn{
 }
 a svg{
     height:20px;
-}
-
-.authHeader
-{
-    color: #222;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.auth-button
-{
-    background-color: #131b29;
 }

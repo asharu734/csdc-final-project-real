@@ -30,7 +30,7 @@ export default function LoginPage() {
   }
   return (
     <form className="login" onSubmit={login}>
-      <h1 class="authHeader">Login</h1>
+      <h1>Login</h1>
       <input type="text"
              placeholder="username"
              value={username}
@@ -39,7 +39,7 @@ export default function LoginPage() {
              placeholder="password"
              value={password}
              onChange={ev => setPassword(ev.target.value)}/>
-      <button class="auth-button">Login</button>
+      <button>Login</button>
     </form>
   );
 }
