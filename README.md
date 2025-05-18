@@ -7,17 +7,28 @@ Project Overview
   as well as the ability to post new blogs, see the total blogs, as well as editing and deletion.
   
 Tech Used
+
   MongoDB - For database management
+  
   Express - Backend framework
+  
   React - Frontend module
+  
   Node - JavaScript backend capabilities
+  
   Git - Version control and collaboration
+  
   npm - Package manager
   
+  
 Setup Instructions
+
 	1. > git clone https://github.com/asharu734/csdc-final-project-real.git
+ 
 	2. Open Visual Studio Code, open project
+ 
 	3. Create terminal
+ 
 	4. > yarn start
  
 Code Explanation
